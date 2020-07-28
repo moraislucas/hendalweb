@@ -1,0 +1,24 @@
+{
+  "name": "hendal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch ./js/script.js --output ./main.js",
+    "build": "webpack --mode production ./js/script.js --output ./main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moraislucas/hendalweb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moraislucas/hendalweb/issues"
+  },
+  "homepage": "https://github.com/moraislucas/hendalweb#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

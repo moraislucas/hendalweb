@@ -1,0 +1,1210 @@
+
+    :root {
+      --primaria: #4A5AED;
+      --baixo: #28293D;
+      --medio: #1C1C27;
+      --alto: #06060F;
+      --texto: #A4A4A9
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Montserrat, sans-serif
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    ul {
+      list-style: none
+    }
+
+    a {
+      text-decoration: none
+    }
+
+    img {
+      max-width: 100%;
+      display: block
+    }
+
+    .disabled {
+      opacity: .5 !important;
+      pointer-events: none !important
+    }
+
+    .lista-servicos {
+      position: absolute;
+      width: 100%;
+      height: 0
+    }
+
+    .lista-servicos ul {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0;
+      color: transparent
+    }
+
+    .btn-principal,
+    p {
+      font-family: Inter, sans-serif
+    }
+
+    .bg-particles {
+      background: url(../assets/particles.svg) no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: auto
+    }
+
+    .container {
+      width: 95% !important;
+      max-width: 1120px !important;
+      padding: 0 10px;
+      margin: 0 auto;
+      overflow: hidden
+    }
+
+    body {
+      background: var(--alto)
+    }
+
+    #form-erro,
+    #form-sucesso {
+      padding: 20px 0
+    }
+
+    #form-erro h2,
+    #form-sucesso h2 {
+      font-size: 24px;
+      margin-bottom: 18px
+    }
+
+    @media(max-width:550px) {
+
+      #form-erro h2,
+      #form-sucesso h2 {
+        font-size: 20px
+      }
+
+      #form-erro p,
+      #form-sucesso p {
+        font-size: 15px
+      }
+    }
+
+    #form-erro h2,
+    #form-erro p {
+      color: #ff002b
+    }
+
+    #form-sucesso h2,
+    #form-sucesso p {
+      color: #00c573
+    }
+
+    #form-erro p,
+    #form-sucesso p {
+      font-size: 16px
+    }
+
+    #recaptcha-item {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 18px
+    }
+
+    #enviar:disabled {
+      opacity: .5;
+      pointer-events: none
+    }
+
+    .nao-aparece {
+      visibility: hidden;
+      position: absolute;
+      height: 0
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-top: 48px
+    }
+
+    .menu nav ul {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap
+    }
+
+    .menu nav li {
+      color: var(--texto)
+    }
+
+    .menu nav li a {
+      display: block;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--texto);
+      transition: .3s ease
+    }
+
+    .menu nav li+li {
+      margin-left: 48px
+    }
+
+    .menu nav li a.link-chamada {
+      font-size: 14px;
+      color: var(--primaria)
+    }
+
+    .menu nav li a:hover {
+      color: #fff
+    }
+
+    .btn-mobile {
+      border: none;
+      background: 0 0;
+      cursor: pointer;
+      padding: 5px;
+      outline: 0;
+      display: none;
+      position: absolute;
+      right: 0;
+      z-index: 800
+    }
+
+    .btn-mobile span {
+      width: 33px;
+      height: 2px;
+      border-radius: 5px;
+      background: #fff;
+      display: block;
+      transition: .3s ease
+    }
+
+    .btn-mobile span+span {
+      margin-top: 7px
+    }
+
+    .grid-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 60px;
+      gap: 60px
+    }
+
+    .grid-item {
+      margin: 0 auto
+    }
+
+    .grid-item h1 {
+      color: #fff;
+      font-size: 60px;
+      line-height: 1.2;
+      margin-top: 40px
+    }
+
+    span {
+      color: var(--primaria);
+      margin-left: 5px
+    }
+
+    .grid-item h2 {
+      margin: 36px 0 48px 0;
+      color: var(--texto);
+      line-height: 1.4;
+      font-size: 18px;
+      font-family: Inter, sans-serif;
+      font-weight: 400
+    }
+
+    .grid-item h2>strong {
+      font-weight: 400;
+      font-family: Inter, sans-serif
+    }
+
+    .btn-principal {
+      background: var(--primaria);
+      color: #fff;
+      width: 260px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      font-weight: 500;
+      transition: .3s ease
+    }
+
+    .btn-principal:hover {
+      transform: scale(1.05)
+    }
+
+    .quem-somos {
+      margin-top: 130px;
+      background: url(../assets/particles.svg) no-repeat;
+      background-size: cover;
+      width: 100%
+    }
+
+    h2 {
+      color: #fff;
+      font-size: 48px
+    }
+
+    .quem-somos h3 {
+      color: #ececff;
+      font-size: 18px;
+      margin: 24px 0 18px 0
+    }
+
+    .quem-somos p {
+      color: var(--texto);
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.5;
+      max-width: 702px
+    }
+
+    .quem-somos-item {
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center
+    }
+
+    .sociais {
+      display: flex;
+      align-items: flex-end
+    }
+
+    .quem-somos-item .sociais::before {
+      content: '';
+      background: url(../assets/details-social.svg) no-repeat;
+      width: 42px;
+      height: 53px;
+      display: block;
+      margin-right: 36px;
+      position: relative;
+      top: -5px
+    }
+
+    .sociais a {
+      padding: 10px;
+      padding-bottom: 0;
+      display: block
+    }
+
+    .sociais a:hover svg path {
+      stroke: var(--primaria)
+    }
+
+    .sociais a+a {
+      margin-left: 24px
+    }
+
+    .oq-fazemos {
+      margin-top: 180px;
+      height: auto;
+      margin-bottom: 80px
+    }
+
+    .fazemos-container {
+      margin-top: 120px;
+      display: flex;
+      justify-content: space-between
+    }
+
+    .fazemos-item {
+      width: 560px;
+      height: 360px;
+      background: linear-gradient(to top, var(--alto), rgba(19, 19, 31, .185));
+      border-radius: 5px;
+      padding: 60px 50px;
+      cursor: pointer;
+      transition: .5s ease
+    }
+
+    .fazemos-item+.fazemos-item {
+      margin-left: 75px;
+      margin-top: 120px
+    }
+
+    .fazemos-item img {
+      margin-bottom: 36px
+    }
+
+    .fazemos-item h3 {
+      color: #fff;
+      font-size: 24px;
+      margin-bottom: 18px
+    }
+
+    .fazemos-item p {
+      color: var(--texto);
+      font-size: 17px;
+      line-height: 1.6
+    }
+
+    .bg-white {
+      background: #fff
+    }
+
+    .bg-white.execao {
+      position: relative
+    }
+
+    .bg-white h2 {
+      color: var(--medio)
+    }
+
+    .como-fazemos {
+      padding-top: 120px;
+      height: 130vh
+    }
+
+    .como-fazemos h2 {
+      font-weight: 700;
+      margin-bottom: 14px
+    }
+
+    .como-fazemos p {
+      color: var(--primaria);
+      font-size: 17px
+    }
+
+    .como-fazemos-container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      margin-top: 120px
+    }
+
+    .step {
+      display: none;
+      animation: showModal .5s forwards
+    }
+
+    .step.ativo {
+      display: flex
+    }
+
+    .step-info {
+      position: relative
+    }
+
+    .step.ativo .step-info::before {
+      content: '';
+      width: 0%;
+      height: 2px;
+      background: var(--primaria);
+      display: block;
+      position: absolute;
+      bottom: -60px;
+      animation: loading 8.8s linear forwards
+    }
+
+    @keyframes loading {
+      to {
+        width: 90%
+      }
+    }
+
+    .nav-step .step-number,
+    .step .step-number {
+      width: 70px;
+      height: 75px;
+      border: 2px solid var(--primaria);
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--primaria);
+      font-size: 24px;
+      font-weight: 600
+    }
+
+    .step .step-info {
+      margin-left: 60px;
+      max-width: 540px
+    }
+
+    .step .step-info h3 {
+      font-size: 36px;
+      color: var(--baixo)
+    }
+
+    .step .step-info p {
+      color: var(--texto);
+      margin-top: 24px;
+      font-size: 18px;
+      max-width: 90%;
+      line-height: 1.6
+    }
+
+    .nav-step {
+      background: var(--primaria);
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 400px;
+      height: 764px;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+      display: flex;
+      justify-content: center;
+      align-items: center
+    }
+
+    .nav-step nav ul li a {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, .3);
+      transition: .3s ease
+    }
+
+    .nav-step nav ul li a.ativo,
+    .nav-step nav ul li a:hover {
+      color: #fff
+    }
+
+    .nav-step nav ul li a .step-number {
+      margin-right: 24px;
+      color: rgba(255, 255, 255, .3);
+      border-color: rgba(255, 255, 255, .3)
+    }
+
+    .btn-step.ativo .step-number,
+    .nav-step nav ul li a:hover .step-number {
+      color: #fff;
+      border-color: #fff
+    }
+
+    .nav-step nav ul li+li::before {
+      content: '';
+      width: 2px;
+      height: 60px;
+      background: rgba(255, 255, 255, .3);
+      display: block;
+      margin: 36px 0 36px 36px
+    }
+
+    .cases {
+      padding: 120px 0
+    }
+
+    .cases h2 {
+      margin-bottom: 120px
+    }
+
+    .cases-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 120px;
+      align-items: center;
+      margin-bottom: 120px
+    }
+
+    .cases-item h3 {
+      font-size: 36px;
+      color: var(--alto);
+      font-weight: 800;
+      margin-bottom: 14px
+    }
+
+    .cases-item h4 {
+      font-size: 18px;
+      color: var(--baixo);
+      margin-bottom: 24px
+    }
+
+    .cases-item p {
+      color: var(--texto);
+      line-height: 1.6;
+      margin-bottom: 60px;
+      max-width: 415px
+    }
+
+    .cases-item a.link-case {
+      color: var(--primaria);
+      font-size: 14px;
+      font-weight: 700;
+      transition: .5s;
+      display: flex;
+      align-items: center
+    }
+
+    .cases-item a.link-case::after {
+      content: '';
+      background: url(../assets/arrow.svg) no-repeat center center;
+      display: inline-block;
+      width: 32px;
+      height: 15px;
+      margin-left: -150px;
+      opacity: 0;
+      transition: .5s ease
+    }
+
+    .cases-item a.link-case:hover::after {
+      opacity: 1;
+      margin-left: 13px
+    }
+
+    .footer {
+      padding-top: 160px;
+      text-align: center
+    }
+
+    .footer h2 {
+      font-size: 48px;
+      font-weight: 800
+    }
+
+    .footer p {
+      color: var(--texto);
+      line-height: 1.6;
+      font-size: 16px;
+      margin: 36px 0 48px 0
+    }
+
+    .footer a {
+      margin: 0 auto
+    }
+
+    .copy {
+      margin-top: 120px;
+      padding: 60px 0 80px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(255, 255, 255, .2)
+    }
+
+    .copy .sociais a {
+      color: var(--texto);
+      transition: .3s ease;
+      font-family: Inter, sans-serif
+    }
+
+    .copy .sociais a svg {
+      margin-right: 5px
+    }
+
+    .copy .sociais a svg path {
+      stroke: var(--texto)
+    }
+
+    .copy .sociais a:hover {
+      color: var(--primaria)
+    }
+
+    .copy .sociais a:hover svg path {
+      stroke: var(--primaria)
+    }
+
+    .copy {
+      color: var(--texto)
+    }
+
+    .modal-formulario {
+      background: rgba(6, 6, 15, .5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 200;
+      overflow-y: auto;
+      overflow-x: hidden;
+      display: none
+    }
+
+    .modal-formulario.mostrar {
+      display: block
+    }
+
+    .modal-container {
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+      width: 100%;
+      max-width: 630px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 60px 85px;
+      z-index: 300;
+      animation: showModal .3s forwards
+    }
+
+    @keyframes showModal {
+      from {
+        opacity: 0;
+        transform: translate3d(30px, 0, 0)
+      }
+
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+      }
+    }
+
+    .modal-container .formulario-titulo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center
+    }
+
+    .modal-container .formulario-titulo h3 {
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      color: var(--medio)
+    }
+
+    .modal-container .formulario-titulo .fechar {
+      background: url(../assets/fechar.svg) no-repeat;
+      width: 30px;
+      height: 30px;
+      padding: 20px;
+      cursor: pointer;
+      border: none;
+      outline: 0
+    }
+
+    .modal-container p {
+      color: var(--primaria);
+      font-family: Montserrat, sans-serif;
+      font-size: 14px;
+      font-weight: 400
+    }
+
+    .modal-container form {
+      margin-top: 36px;
+      position: relative
+    }
+
+    .modal-container form label {
+      display: block;
+      color: var(--baixo);
+      font-size: 14px;
+      margin: 24px 0 14px 0
+    }
+
+    .modal-container form label:first-child {
+      margin-top: 0
+    }
+
+    .modal-container form input,
+    .modal-container form textarea {
+      height: 60px;
+      width: 100%;
+      border-radius: 5px;
+      border: none;
+      border: 1px solid var(--texto);
+      outline: 0;
+      padding: 0 20px;
+      font-size: 14px;
+      line-height: 1.6;
+      font-weight: 600;
+      color: var(--medio);
+      transition: .3s ease
+    }
+
+    .modal-container form input.projeto {
+      width: 65% !important
+    }
+
+    .modal-container form input::placeholder,
+    .modal-container form textarea::placeholder {
+      font-weight: 400
+    }
+
+    .modal-container form input:focus,
+    .modal-container form textarea:focus {
+      border-color: var(--primaria);
+      background: rgba(74, 90, 237, .1)
+    }
+
+    .modal-container form textarea {
+      padding: 20px;
+      height: 20vh
+    }
+
+    .modal-container form button {
+      margin-top: 36px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px
+    }
+
+    [data-anime] {
+      opacity: 0;
+      transition: .5s
+    }
+
+    [data-anime=left] {
+      transform: translate3d(-30px, 0, 0)
+    }
+
+    [data-anime=right] {
+      transform: translate3d(30px, 0, 0)
+    }
+
+    [data-anime=top] {
+      transform: translate3d(0, -30px, 0)
+    }
+
+    [data-anime=bottom] {
+      transform: translate3d(0, 30px, 0)
+    }
+
+    [data-anime].anima {
+      opacity: 1;
+      transform: translate3d(0, 0, 0)
+    }
+
+    @media(max-width:1041px) {
+      body {
+        overflow-x: hidden
+      }
+
+      .container {
+        overflow: initial
+      }
+
+      .menu-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 30;
+        background: var(--alto) url(../assets/particles.svg) no-repeat center center;
+        padding-bottom: 15px
+      }
+
+      .menu {
+        display: flex;
+        padding-bottom: 20px;
+        position: relative
+      }
+
+      .menu nav {
+        display: none !important;
+        background: var(--alto);
+        width: 30%;
+        min-width: 250px;
+        height: auto;
+        padding: 40px 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+        position: fixed;
+        top: 80px;
+        right: -40px;
+        z-index: 800 !important;
+        text-align: right;
+        animation: showMenu .3s ease forwards
+      }
+
+      @keyframes showMenu {
+        from {
+          opacity: 0;
+          transform: translate3d(-30px, 0, 0)
+        }
+
+        to {
+          opacity: 1;
+          transform: translate3d(0, 0, 0)
+        }
+      }
+
+      .menu nav.ativo {
+        display: block !important
+      }
+
+      .menu nav ul {
+        display: block
+      }
+
+      .menu nav li+li {
+        margin-left: 0;
+        margin-top: 36px
+      }
+
+      .menu nav li:nth-child(4) {
+        display: none
+      }
+
+      .btn-mobile {
+        display: block
+      }
+
+      .btn-mobile.ativo span:nth-child(1) {
+        opacity: 0
+      }
+
+      .btn-mobile.ativo span:nth-child(2) {
+        transform: translate3d(0, 4px, 0) rotate(45deg)
+      }
+
+      .btn-mobile.ativo span:nth-child(3) {
+        transform: translate3d(0, -5px, 0) rotate(-45deg)
+      }
+
+      .menu nav ul.ativo {
+        display: block
+      }
+
+      .grid-section {
+        align-items: center;
+        margin-top: 120px
+      }
+
+      .grid-item h1 {
+        font-size: 56px
+      }
+
+      .grid-item p {
+        margin: 24px 0 36px 0
+      }
+
+      .quem-somos {
+        position: relative
+      }
+
+      .quem-somos-item {
+        display: block
+      }
+
+      .hendal img {
+        right: 0;
+        position: absolute
+      }
+
+      .oq-fazemos {
+        height: auto
+      }
+
+      .como-fazemos {
+        height: 65vh
+      }
+
+      .como-fazemos p {
+        font-size: 16px
+      }
+
+      .nav-step {
+        width: 35%;
+        max-width: 400px
+      }
+
+      @media(max-width:760px) {
+        .bg-particles {
+          height: auto
+        }
+
+        .grid-section {
+          grid-template-columns: 1fr;
+          text-align: center
+        }
+
+        .grid-item {
+          margin-top: 36px
+        }
+
+        .grid-item .btn-principal {
+          margin: 0 auto
+        }
+
+        .grid-item img {
+          display: none
+        }
+
+        .quem-somos {
+          margin-top: 0;
+          background: 0 0
+        }
+
+        .quem-somos p {
+          max-width: 98%
+        }
+
+        .oq-fazemos {
+          margin-top: 120px;
+          height: auto
+        }
+
+        .fazemos-container {
+          margin-top: 60px;
+          display: block
+        }
+
+        .fazemos-item {
+          width: 100%;
+          height: auto
+        }
+
+        .fazemos-item+.fazemos-item {
+          margin-left: 0;
+          margin-top: 48px
+        }
+
+        .como-fazemos {
+          height: 110vh
+        }
+
+        .como-fazemos p {
+          font-size: 16px
+        }
+
+        .como-fazemos-container {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-areas: "nav-step""todos-step";
+          margin-top: 60px;
+          gap: 60px;
+          height: auto
+        }
+
+        .todos-step {
+          grid-area: todos-step;
+          padding: 20px
+        }
+
+        .nav-step {
+          grid-area: nav-step
+        }
+
+        .nav-step .step-number,
+        .step .step-number {
+          width: 60px;
+          height: 60px
+        }
+
+        .step .step-info h3 {
+          font-size: 24px
+        }
+
+        .step .step-info p {
+          margin-top: 18px;
+          font-size: 16px;
+          line-height: 1.5
+        }
+
+        .nav-step {
+          background: 0 0;
+          box-shadow: none;
+          position: initial;
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+          display: block;
+          padding: 20px
+        }
+
+        .nav-step nav ul {
+          width: 100%;
+          display: flex;
+          justify-content: space-between
+        }
+
+        .nav-step nav ul li a {
+          font-size: 14px;
+          color: var(--texto)
+        }
+
+        .nav-step nav ul li a .step-number {
+          margin-right: 18px;
+          color: var(--texto);
+          border-color: var(--texto)
+        }
+
+        .nav-step nav ul li+li::before {
+          display: none
+        }
+
+        .step.ativo .step-info::before {
+          bottom: -40px
+        }
+
+        .nav-step nav ul li a.ativo,
+        .nav-step nav ul li a:hover {
+          color: var(--primaria)
+        }
+
+        .btn-step.ativo .step-number,
+        .nav-step nav ul li a:hover .step-number {
+          color: var(--primaria);
+          border-color: var(--primaria)
+        }
+
+        .cases h2 {
+          margin-bottom: 48px
+        }
+      }
+
+      @media(max-width:550px) {
+        .menu nav {
+          right: 0
+        }
+
+        .grid-item h1 {
+          font-size: 36px
+        }
+
+        .grid-item p {
+          font-size: 15px
+        }
+
+        .btn-principal {
+          font-size: 15px;
+          width: 200px
+        }
+
+        h2 {
+          font-size: 24px
+        }
+
+        .quem-somos {
+          padding-top: 24px
+        }
+
+        .quem-somos h3 {
+          font-size: 16px
+        }
+
+        .quem-somos p {
+          font-size: 15px
+        }
+
+        .hendal img {
+          position: initial;
+          margin-top: 48px
+        }
+
+        .oq-fazemos {
+          padding-top: 24px
+        }
+
+        .fazemos-item {
+          padding: 40px 30px
+        }
+
+        .fazemos-item h3 {
+          font-size: 18px
+        }
+
+        .fazemos-item img {
+          width: 50px
+        }
+
+        .como-fazemos {
+          padding: 48px 0;
+          height: auto
+        }
+
+        .nav-step {
+          padding: 0
+        }
+
+        .nav-step .step-number,
+        .step .step-number {
+          display: none
+        }
+
+        .nav-step nav ul li a {
+          font-size: 13px
+        }
+
+        .nav-step nav ul li+li a {
+          margin-left: 12px
+        }
+
+        .todos-step {
+          padding: 0 0
+        }
+
+        .step .step-info {
+          margin-left: 0;
+          max-width: 100%
+        }
+
+        .como-fazemos p {
+          font-size: 14px
+        }
+
+        .cases {
+          padding: 24px 10px
+        }
+
+        .cases-container {
+          grid-template-columns: 1fr;
+          gap: 24px
+        }
+
+        .cases-item h3 {
+          font-size: 22px
+        }
+
+        .cases-item h4 {
+          font-size: 16px
+        }
+
+        .cases-item p {
+          margin-bottom: 36px;
+          font-size: 15px
+        }
+
+        .footer h2 {
+          font-size: 36px
+        }
+
+        .footer p {
+          font-size: 16px
+        }
+
+        .copy {
+          margin-top: 60px;
+          padding: 40px 0;
+          display: block
+        }
+
+        .copy .sociais a {
+          font-size: 14px
+        }
+
+        .copy img {
+          margin-left: 10px;
+          margin-top: 48px;
+          width: 100px
+        }
+
+        .modal-container {
+          padding: 40px 20px
+        }
+
+        .bg-white {
+          overflow-x: hidden
+        }
+
+        .menu a>img {
+          width: 100px
+        }
+
+        .formulario-titulo h3 {
+          font-size: 20px !important
+        }
+
+        .modal-container p {
+          font-size: 13px
+        }
+      }
+    }

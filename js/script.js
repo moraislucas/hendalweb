@@ -40,7 +40,7 @@ function initModal(modalId, btnId) {
   }
 
 }
-initModal('modal-form', '.btn-form');
+// initModal('modal-form', '.btn-form');
 
 function initSteps() {
   const btnStep = document.querySelectorAll('.btn-step');
